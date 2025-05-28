@@ -42,7 +42,7 @@ public class SecurityConfig {
                 )
                 .formLogin(withDefaults())
                 .httpBasic(withDefaults())
-                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+//                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
         ;
 
 

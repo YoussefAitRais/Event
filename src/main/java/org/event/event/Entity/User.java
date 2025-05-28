@@ -9,7 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "users") // pour éviter conflit SQL avec "user" mot-clé réservé
+@Table(name = "users")
 public class User {
 
     @Id
@@ -30,4 +30,6 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Reservation> reservations;
+
+
 }

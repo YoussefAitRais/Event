@@ -1,0 +1,83 @@
+.banner-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 60px;
+  gap: 40px;
+  background: linear-gradient(to bottom right, #e3f2fd, #bbdefb); /* light blue gradient */
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(33, 150, 243, 0.15); /* soft blue shadow */
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.text-container {
+  max-width: 600px;
+  color: #333;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: #2196f3; /* blue accent */
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.highlight {
+  color: #2196f3; /* blue highlight instead of purple */
+}
+
+.description {
+  margin-top: 16px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.event-details-card {
+  margin-top: 30px;
+  background: linear-gradient(90deg, #e3f2fd, #bbdefb); /* card with blue gradient */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  margin-top: 10px;
+  background-color: #1e88e5; /* Stronger blue button */
+  color: white;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #1565c0;
+}

@@ -1,0 +1,110 @@
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0f254d;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-panel {
+  flex: 1;
+  background: url('https://i.ibb.co/fNzHHLZ/floato-side.png') no-repeat center;
+  background-size: cover;
+  display: none;
+}
+
+.form-panel {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  border-radius: 0 12px 12px 0;
+}
+
+.form-wrapper {
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.brand {
+  color: #1f3bb3;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.divider {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin: 24px 0 16px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  width: 40%;
+  background-color: #ddd;
+  position: absolute;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.google-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-button img {
+  width: 20px;
+}
+
+/* Responsive behavior */
+@media screen and (min-width: 992px) {
+  .image-panel {
+    display: block;
+  }
+
+  .form-panel {
+    border-radius: 0 12px 12px 0;
+  }
+}

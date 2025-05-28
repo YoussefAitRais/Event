@@ -1,0 +1,43 @@
+<div class="register-container">
+  <div class="image-panel"></div>
+
+  <div class="form-panel">
+    <div class="form-wrapper">
+      <img src="https://i.ibb.co/02sTLL2/flo-logo.png" alt="Logo" class="logo" />
+
+      <h2>Hi, Welcome to <span class="brand">HelloEvent</span></h2>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Your Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Your Email</mat-label>
+          <input matInput formControlName="email" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" />
+        </mat-form-field>
+
+        <mat-checkbox formControlName="agreeTerms">
+          I agree to the <a href="#">Terms and Conditions</a>
+        </mat-checkbox>
+
+        <button mat-raised-button color="primary" class="submit-btn" type="submit">
+          Get Started
+        </button>
+      </form>
+
+      <div class="divider">Or get started with</div>
+
+      <button mat-stroked-button class="google-button" (click)="signUpWithGoogle()">
+        <img src="https://img.icons8.com/color/48/000000/google-logo.png" />
+        Start with Google
+      </button>
+    </div>
+  </div>
+</div>
