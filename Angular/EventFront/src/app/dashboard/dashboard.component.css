@@ -1,0 +1,84 @@
+.layout {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 240px;
+  padding: 10px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 16px;
+}
+
+.upgrade-box {
+  margin: 24px 16px;
+  padding: 12px;
+  background: #fbe9e7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+}
+
+.toolbar-title {
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+  background: #f7f7f7;
+  padding: 24px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.highlight {
+  background: #e3f2fd;
+}
+
+.chart-card {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.table-section {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.status-chip {
+  background: #ffe082;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.full-width {
+  width: 100%;
+}
